@@ -12,14 +12,19 @@
 
   function UiRouterConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state("state", {
-        url: "/state",
-        templateUrl: "/static/views/state.html",
-        controller: "StateController"
+      .state("current", {
+        url: "/current",
+        templateUrl: "/static/views/current.html",
+        controller: "CurrentController"
+      })
+      .state("history", {
+        url: "/history",
+        templateUrl: "/static/views/history.html",
+        controller: "HistoryController"
       });
 
     //Default state...
-    $urlRouterProvider.otherwise("/state");
+    $urlRouterProvider.otherwise("/current");
   }
 
   angular.module("app", ["restangular", "ui.router"])

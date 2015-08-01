@@ -3,10 +3,13 @@
 
   function MainController($scope) {}
 
-  function StateController($scope, $state) {}
+  function CurrentController($scope, $state) {}
+
+  function HistoryController($scope, $state) {}
 
   angular.module("app")
     .controller("MainController", ["$scope", MainController])
-    .controller("StateController", ["$scope", "$state", StateController]);
-  
+    .controller("CurrentController", ["$scope", "$state", CurrentController])
+    .controller("HistoryController", ["$scope", "$state", HistoryController]);
+
 })();
