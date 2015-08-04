@@ -1,0 +1,12 @@
+<h2>Current</h2>
+<div class="alert alert-info" ng-show="temperature < 17">
+  <strong>{{ temperature }} is a little chilly!</strong> {{ temperature + 10 }} would be a little nicer.
+</div>
+<div class="alert alert-danger" ng-show="temperature >= 17">
+  <strong>{{ temperature  }} is not too bad!</strong> {{ temperature - 10 }} would be a little cold.
+</div>
+<div class="input-group">
+  <span class="input-group-addon">Current temperature:</span>
+  <input class="form-control" type="number" ng-model="temperature">
+  <span class="input-group-addon">&deg;C</span>
+</div>

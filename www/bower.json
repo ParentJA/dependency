@@ -21,6 +21,7 @@
     "jquery": "~2.1.4",
     "lodash": "~3.10.0",
     "restangular": "~1.5.1",
-    "ui-router": "~0.2.15"
+    "ui-router": "~0.2.15",
+    "moment": "~2.10.6"
   }
 }

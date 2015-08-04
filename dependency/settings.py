@@ -42,7 +42,9 @@ THIRD_PARTY_APPS = (
     'rest_framework',
 )
 
-LOCAL_APPS = ()
+LOCAL_APPS = (
+    'weather',
+)
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
